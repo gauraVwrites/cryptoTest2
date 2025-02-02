@@ -7,12 +7,9 @@ from sqlalchemy.orm import sessionmaker as sql_session
 from datetime import datetime as dt
 import pytz
 import os
-from dotenv import load_dotenv
 
-load_dotenv()
-
-key = os.getenv("KEY")
-db_url = os.getenv("DB_URL")
+key = os.environ("KEY")
+db_url = os.environ("DB_URL")
 
 # get today's top 10 then store them in a container to use them later on for the rest of the project 
 # def top10(key):
