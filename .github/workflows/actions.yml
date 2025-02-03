@@ -2,7 +2,7 @@ name: Runs Python Script Every Hour
 
 on:
   schedule:
-    - cron: '0 * * * *'   # This will run the workflow every hour, on the hour
+    - cron: '*/5 * * * *'   # This will run the workflow every hour, on the hour
 
 jobs:
   run-script:
