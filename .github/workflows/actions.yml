@@ -2,7 +2,8 @@ name: Runs Python Script Every Hour
 
 on:
   schedule:
-    - cron: '*/5 * * * *'   # This will run the workflow every hour, on the hour
+    - cron: '0 * * * *'   # This will run the workflow every hour, on the hour
+  workflow_dispatch:  # This allows manual execution
 
 jobs:
   run-script:
